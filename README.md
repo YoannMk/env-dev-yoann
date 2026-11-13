@@ -26,8 +26,11 @@
 | Logiciel | Version | Commande d'installation                             |
 | -------- | ------- | --------------------------------------------------- |
 | Git      | 2.43.0  | déjà présent dans Ubuntu                            |
-| tree     | 2.3.2   | `sudo apt install -y tree`                          |
+| tree     | 2.1.1   | `sudo apt install -y tree`                          |
 | htop     | 3.3.0   | `sudo apt install -y htop`                          |
 | nano     | 7.2     | `sudo apt install -y nano`                          |
 | Node.js  | 26.xx   | dépôt NodeSource, puis `sudo apt install -y nodejs` |
-| npm      | 11.xx   | installé avec Node.js                               |
+|
+## Historique  
+
+Ce dossier est suivi avec Git depuis le sous-module 2.
