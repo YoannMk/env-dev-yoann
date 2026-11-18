@@ -57,3 +57,9 @@
 | `git branch` | Liste les branches de mon projet                  | `git branch`                      |
 | `git switch` | Crée une nouvelle branche et se positionne dessus | `git switch -c ajout-section`     |
 | `git merge`  | Fusionne une branche dans la branche courante     | `git merge branches-aide-memoire` |
+
+## Astuce de Cheick
+
+| Commande | Ce qu'elle fait                                            | Exemple  |
+| -------- | -----------------------------------------                  | -------- |
+|git status| Affiche l’état des fichiers : nouveaux, modifiés, préparés |git status|
