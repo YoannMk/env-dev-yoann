@@ -1,4 +1,4 @@
-# env-dev-yoann
+# env-dev-yoann – Mon environnement de développement
 
 Environnement de développement de Yoann MOUAKA – B1 DEV, IFRAN.
 
