@@ -55,6 +55,7 @@ Résultat attendu : une version pour Ubuntu, Git, Node.js, npm et tree.
 | Fichier ou dossier     | Rôle                                                 |
 | ---------------------- | ---------------------------------------------------- |
 | `README.md`            | Cette documentation                                  |
+| `docs/reseau.md`       | Résumé des commandes réseau
 | `JOURNAL.md`           | Le journal de mes choix                              |
 | `docs/aide-memoire.md` | Mes commandes Linux                                  |
 | `scripts/installer.sh` | Installe les outils dans Ubuntu                      |
