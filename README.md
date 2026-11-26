@@ -48,7 +48,7 @@ Environnement de développement de Yoann MOUAKA – B1 DEV, IFRAN.
 ## Vérification
 
 Lancer `./scripts/verifier.sh` dans Ubuntu.
-Résultat attendu : une version pour Ubuntu, Git, Node.js, npm et tree.
+Résultat attendu : une version pour Ubuntu, Git, Node.js, npm, tree et Python, et `HTTP/2 200`.
 
 ## Contenu du dossier
 
