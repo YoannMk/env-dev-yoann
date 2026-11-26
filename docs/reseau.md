@@ -42,3 +42,28 @@ Quand je tape `https://github.com` dans mon navigateur :
 | 301  | Moved Permanently     | Redirection : la page a changé d'adresse      | `http://github.com` vers `https://github.com/`  |
 | 404  | Not Found             | Erreur client : la page demandée n'existe pas | `https://github.com/page-qui-nexiste-pas-ifran` |
 | 500  | Internal Server Error | Erreur serveur : le serveur a eu un problème  | (pas vu)                                        |
+
+## Les ports
+
+| Port | Service                  | Exemple d'URL           |
+| ---- | ------------------------ | ----------------------- |
+| 80   | HTTP                     | `http://example.com`    |
+| 443  | HTTPS                    | `https://github.com`    |
+| 8000 | Serveur de développement | `http://localhost:8000` |
+
+## Diagnostiquer une erreur
+
+Les 4 questions, dans l'ordre :
+
+1. Le nom est-il trouvé ? → `nslookup <nom>`
+2. La machine répond-elle ? → `ping -c 4 <nom>`
+3. Un serveur écoute-t-il le port ? → `curl -I <url>` ou `ss -tln`
+4. Que répond le serveur ? → code de réponse (`curl -I`, onglet Réseau) et journal du serveur
+
+### Exemple : une panne que j'ai réparée
+
+- **Symptôme :** En cliquant sur « À propos », le navigateur et le journal du serveur affichent `404 File not found`.
+- **Étape :** Étape 6, la réponse du serveur.
+- **Cause :** La page HTML demande `/a-propos.html` (avec un tiret), mais le fichier s'appelait `apropos.html`.
+- **Correction :** J'ai renommé le fichier avec `mv apropos.html a-propos.html`.
+- **Vérification :** `curl -I http://localhost:8000/a-propos.html` répond `200 OK` et la page s'affiche.
